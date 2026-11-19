@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cxsw04gvsigwq"]
+
+[ext_resource type="Script" uid="uid://bkjr8nygm50dx" path="res://Scripts/player.gd" id="1_v0iea"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_onrkg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5taog"]
+
+[node name="player" type="Node2D" unique_id=1387745301]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=137391210]
+sprite_frames = SubResource("SpriteFrames_onrkg")
+script = ExtResource("1_v0iea")
+
+[node name="Area2D" type="Area2D" parent="AnimatedSprite2D" unique_id=1300228340]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D/Area2D" unique_id=2020508419]
+shape = SubResource("RectangleShape2D_5taog")
+
+[node name="Camera2D" type="Camera2D" parent="AnimatedSprite2D" unique_id=2083332632]
