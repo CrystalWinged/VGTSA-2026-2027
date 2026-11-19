@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://widnysh8t405"]
+
+[ext_resource type="PackedScene" uid="uid://wrhur712o785" path="res://Scenes/player.tscn" id="1_rhm44"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5taog"]
+
+[node name="Node2D" type="Node2D" unique_id=1283517492]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=263448126]
+
+[node name="Area2D" type="Area2D" parent="Sprite2D" unique_id=1910748025]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D" unique_id=1509089412]
+position = Vector2(-18, -6)
+scale = Vector2(6.703094, -5.0442014)
+shape = SubResource("RectangleShape2D_5taog")
+
+[node name="Node2D" parent="Sprite2D/Area2D/CollisionShape2D" unique_id=1492015593 instance=ExtResource("1_rhm44")]
